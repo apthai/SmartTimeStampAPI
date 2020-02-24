@@ -1,0 +1,10 @@
+
+
+ *---------- NUGET FOR BASE AP API ----------*
+ 
+ Access Nuget.org And Search For 
+	1.Swashbuckle.AspNetCore.Swagger --- > https://www.nuget.org/packages/Swashbuckle.AspNetCore.Swagger/5.0.0-rc2
+	2.Swashbuckle.AspNetCore  --- > https://www.nuget.org/packages/Swashbuckle.AspNetCore/4.0.1
+	3.Swashbuckle.AspNetCore.Annotations --- > https://www.nuget.org/packages/Swashbuckle.AspNetCore.Annotations/4.0.1
+	4.Dapper --- > https://www.nuget.org/packages/Dapper/
+	5.Dapper.Contrib --- > https://www.nuget.org/packages/Dapper.Contrib/
