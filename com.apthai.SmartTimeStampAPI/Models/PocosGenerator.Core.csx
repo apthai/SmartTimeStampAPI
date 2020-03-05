@@ -1,4 +1,4 @@
-#! "netcoreapp2.2"
+#! "netcoreapp2.2" 
 #r "nuget:System.Configuration.ConfigurationManager,4.5.0"
 #r "nuget:Microsoft.Extensions.Configuration.Json,2.1.1"
 #r "nuget:System.Data.Common,4.3.0"
@@ -6,7 +6,7 @@
 
 using System.Data;
 using System.Data.Common;
-using System.Data.SqlClient;
+using System.Data.SqlClient; 
 using System.Globalization;
 using System.Text.RegularExpressions;
 using Microsoft.Extensions.Configuration;
@@ -86,13 +86,13 @@ public class PocosGenerator {
 					// Column bindings
 					if (_options.DapperContribAttributes && col.IsPK){
 
-                        if (col.GetType() is int)
+                        if (col.IsAutoIncrement)
                         {
                             builder.AppendLine("        [Key]");
                         }
                         else
                         {
-                            builder.AppendLine("        [ExplicitKey]");
+                            builder.AppendLine("        [ExplicitKey]" );
                         }
 
 

@@ -445,6 +445,18 @@ Order by a.CheckInOutDate desc";
                 return result.ToList< CheckInOut>();
             }
         }
-        
+
+        public bool InsertSSMTResource(SSMTResource sSMTResource)
+        {
+            using (IDbConnection conn = Connection)
+            {
+                conn.Open();
+                var tran = conn.BeginTransaction(IsolationLevel.ReadUncommitted);
+                var result = conn.Insert(sSMTResource, tran);
+
+                return true;
+            }
+        }
+
     }
 }

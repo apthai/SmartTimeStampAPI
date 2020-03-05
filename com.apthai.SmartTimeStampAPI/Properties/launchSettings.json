@@ -14,6 +14,11 @@
       "launchBrowser": true,
       "launchUrl": "api/values",
       "environmentVariables": {
+        "VirtualDirectory": "Value",
+        "SMSApiUrl": "http://192.168.0.40/smsapi/api/sms/SendSMS",
+        "DefaultConnection": "Data Source=192.168.2.52;Initial Catalog=WebVendor_V2;User ID=sa;Password=P@ssw0rd; Application Name=com.apthai.SmartTimeStampAPI",
+        "API_Key": "API_Key_C5EB93DF-307E-404B-A2C5-1AEF355C658B",
+        "API_Token": "API_Token_97A7D30E-54F4-4A59-9569-F74DDF542F55",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },

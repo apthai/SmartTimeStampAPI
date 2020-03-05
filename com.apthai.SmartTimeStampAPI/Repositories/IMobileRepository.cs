@@ -19,6 +19,7 @@ namespace com.apthai.SmartTimeStampAPI.Interfaces
         Task<vwGetActiveAppVersion> GetActiveAppVersion();
         Employee GetEmployeeProfileByDeviceKey(string deviceKey, string phoneNo);
         Employee GetEmployeeProfileByDeviceID(string deviceID, string phoneNo);
+        bool InsertSSMTResource(SSMTResource sSMTResource);
         DateTime CheckInOut(CheckInOut param);
         List<CheckInOut> GetCheckInOutHistory(int empID);
         void ChangePassword(int empid, string newPassword);

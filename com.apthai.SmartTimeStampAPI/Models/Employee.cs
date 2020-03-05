@@ -1,6 +1,8 @@
 ﻿using System;
 using Dapper.Contrib.Extensions;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http;
 
 namespace com.apthai.SmartTimeStampAPI.Model
 {
@@ -36,4 +38,20 @@ namespace com.apthai.SmartTimeStampAPI.Model
         public string PhoneNO { get; set; }
         public string DeviceKey { get; set; }
     }
+
+    public partial class ParamUploadPlanImage
+    {
+        [Required]
+        public int UserID { get; set; }
+        [Required]
+        public DateTime CreateDeviceDate { get; set; }
+        public string CreatorFullName { get; set; }
+        public string ProjectID { get; set; }
+        public string CreateDeviceId { get; set; }
+        public string Description { get; set; }
+        public string sSMTResources { get; set; }
+        public List<IFormFile> ListPicture { get; set; }
+        public string MobileModel { get; set; }
+    }
+    
 }
